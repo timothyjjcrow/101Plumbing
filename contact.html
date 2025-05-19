@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact 101 Plumbing Humboldt Inc. for expert plumbing services. Reach us at (707) 498-2707 or visit our location in Eureka, CA."
+    />
+    <meta
+      name="keywords"
+      content="plumber contact, plumbing quote, plumbing estimate, Humboldt County plumber, Eureka plumbing"
+    />
+    <meta name="author" content="101 Plumbing Humboldt Inc." />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Contact Us - 101 Plumbing Humboldt Inc."
+    />
+    <meta
+      property="og:description"
+      content="Contact our plumbing experts for a free quote or emergency plumbing service in Humboldt County."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.101plumbinghumboldt.com/contact"
+    />
+    <link
+      rel="canonical"
+      href="https://www.101plumbinghumboldt.com/contact.html"
+    />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <title>Contact Us - 101 Plumbing Humboldt Inc.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">101 Plumbing Humboldt Inc.</a>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero background-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <h1>How Can We Help?</h1>
+          <p>
+            We're here to answer your questions and provide expert plumbing
+            solutions. Reach out to us today!
+          </p>
+        </div>
+      </section>
+
+      <section id="contact-form-section" class="page-section">
+        <div class="container contact-form-container">
+          <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p>
+              Feel free to call or email us, or use the form to send a message.
+            </p>
+            <ul>
+              <li>
+                <strong>Phone:</strong>
+                <a href="tel:707-498-2707">(707) 498-2707</a>
+              </li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:101plumbinghumboldt@gmail.com"
+                  >101plumbinghumboldt@gmail.com</a
+                >
+              </li>
+              <li>
+                <strong>Address:</strong> 110 3rd St. Unit I, Eureka, CA 95501
+              </li>
+            </ul>
+            <p>We look forward to serving you!</p>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.597019687464!2d-124.16608588458899!3d40.80744377932173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d156035918e4c7%3A0x60cde84b6d859b76!2s110%203rd%20St%20Unit%20I%2C%20Eureka%2C%20CA%2095501!5e0!3m2!1sen!2sus!4v1678886500000!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style="
+                  border: 0;
+                  border-radius: var(--border-radius);
+                  margin-top: 1.5rem;
+                "
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+          <form
+            action="#"
+            method="POST"
+            class="contact-form"
+            id="main-contact-form"
+            enctype="multipart/form-data"
+          >
+            <h2>Send Us a Message</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="lastName" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone*</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}"
+                  placeholder="(###) ###-####"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service-type">Service Type</label>
+              <select id="service-type" name="serviceType">
+                <option value="">-- Select a service --</option>
+                <option value="repair">Plumbing Repair</option>
+                <option value="installation">Plumbing Installation</option>
+                <option value="emergency">Emergency Service</option>
+                <option value="inspection">Plumbing Inspection</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message*</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group file-upload-container">
+              <label for="image-upload">Upload Photos (Optional)</label>
+              <div class="file-upload-wrapper">
+                <input
+                  type="file"
+                  id="image-upload"
+                  name="imageUpload"
+                  accept="image/*"
+                  multiple
+                  class="file-upload-input"
+                />
+                <label for="image-upload" class="file-upload-button">
+                  <span class="upload-icon">📁</span> Choose Files
+                </label>
+                <span id="selected-files" class="selected-files-info"
+                  >No files selected</span
+                >
+              </div>
+              <p class="help-text">
+                Upload photos of your plumbing issue to help us better
+                understand your needs (Max 5MB per file)
+              </p>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Submit Message
+            </button>
+            <p
+              id="form-thank-you"
+              style="display: none; margin-top: 1rem; color: green"
+            >
+              Thank you! We will contact you soon.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact-info-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h3>101 Plumbing Humboldt Inc.</h3>
+          <p>Humboldt's Premier plumbing services.</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><a href="tel:707-498-2707">P: (707) 498-2707</a></p>
+          <p>
+            <a href="mailto:101plumbinghumboldt@gmail.com"
+              >E: 101plumbinghumboldt@gmail.com</a
+            >
+          </p>
+          <p>110 3rd St. Unit I<br />Eureka, CA 95501</p>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <p>
+            <a
+              href="https://www.facebook.com/p/101-Plumbing-100054321650009/"
+              target="_blank"
+              rel="noopener"
+              >Facebook</a
+            >
+          </p>
+          <p>Stay connected for tips and updates!</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 101 Plumbing Humboldt Inc. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Basic form submission handling for thank you message
+      const contactForm = document.getElementById("main-contact-form");
+      const thankYouMessage = document.getElementById("form-thank-you");
+      const fileInput = document.getElementById("image-upload");
+      const selectedFilesInfo = document.getElementById("selected-files");
+
+      // Handle file selection display
+      if (fileInput) {
+        fileInput.addEventListener("change", function () {
+          if (this.files.length > 0) {
+            if (this.files.length === 1) {
+              selectedFilesInfo.textContent = `1 file selected: ${this.files[0].name}`;
+            } else {
+              selectedFilesInfo.textContent = `${this.files.length} files selected`;
+            }
+          } else {
+            selectedFilesInfo.textContent = "No files selected";
+          }
+        });
+      }
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent actual submission for this demo
+          // In a real scenario, you would send data to a server here with FormData for file upload
+
+          // Example of how to handle file uploads with FormData:
+          // const formData = new FormData(contactForm);
+          // fetch('/submit-form-endpoint', {
+          //   method: 'POST',
+          //   body: formData
+          // })
+
+          thankYouMessage.style.display = "block";
+          contactForm.reset();
+          selectedFilesInfo.textContent = "No files selected"; // Reset file selection text
+          setTimeout(() => {
+            thankYouMessage.style.display = "none";
+          }, 5000);
+        });
+      }
+    </script>
+  </body>
+</html>
